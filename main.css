@@ -1,0 +1,212 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Structure */
+html, body {
+  height:100%;
+  min-height:900px;
+}
+#introduction {
+  height:100%;
+  min-width:800px;
+}
+#introduction h1 {
+  margin:1em 1em 1em 0.3em;
+  height:2em;
+}
+#content header h1 {
+  position:fixed;
+  padding:1em 1em 1em 0.8em;
+  margin:0;
+  width:100%;
+}
+article {
+  position:fixed;
+  width:40%;
+  float:left;
+  min-width:300px;
+}
+#content {
+  width:60%;
+  float:right;
+  min-height:100%;
+}
+ul {
+  margin:12em 2em 2em 1em;
+}
+p {margin:0 1em 1em 1em;}
+
+/* Visual */
+h1 { font-family: 'Lobster', arial, serif; font-size:3em; text-shadow:1px 1px 0 white;}
+h1 a {color:#333; text-decoration:none;}
+h1 a:hover {color:#666;}
+#ribbon {
+  position:fixed;top:0;right:0;padding:0;margin:0;
+}
+p { font-family:sans-serif;font-size:1em;line-height:1.3;}
+p.intro {font-size:1.2em;}
+footer p {
+	margin-top: 3em;
+font-style: italic;
+font-size: 0.9em;
+color: #666;
+}
+a {color:#666;font-weight:bold}
+a:hover {color:#0076a3;}
+#introduction h1 {color:#666;width:50%;}
+#introduction article {background: url(bigbird.png) 90% 50px no-repeat;}
+#content header h1 {
+  background:url(http://www.museum140.com/themes/journalcrunch/images/bk_body.jpg) 100% 0;
+  background-attachment:fixed;
+}
+#content header h1 a {
+  display:block;
+}
+#content {
+  background:url(http://www.museum140.com/themes/journalcrunch/images/bk_body.jpg) 100% 0;
+  background-attachment:fixed;
+}
+#content li header a {
+  text-decoration:none;
+  font-family:arial;
+  font-size:1.5em;
+}
+#content li footer a {
+  font-style:italic;
+  text-decoration:none;
+}
+time {
+	font-weight:bold;
+}
+
+@media screen and (max-width: 800px) {
+ #introduction {
+   min-width:0;
+ }
+ article {
+   position:relative;
+   width:auto;
+   float:none;
+   min-width:0;
+ }
+ #content {
+   width:auto;
+   float:none;
+ }
+ #content header h1 {
+   position:relative;
+ }
+ ul {
+   margin-top:0;
+ }
+
+}
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+
+
+/* Twitter styles */
+.bbpBox {
+  padding:20px; margin:5px 0;
+}
+.tweet_container {
+  background:#fff;
+  padding:10px;
+  margin:0;
+  min-height:48px;
+  color:#{$profile_text_color};
+  -o-border-radius:5px;
+  -ms-border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  -o-shadow:1px 1px 8px #333;
+  -ms-shadow:1px 1px 8px #333;
+  -moz-box-shadow:1px 1px 8px #333;
+  -webkit-box-shadow:1px 1px 8px #333;
+  box-shadow:1px 1px 8px #333;
+}
+.tweet_text {
+ width:100%;
+ font-size:18px;
+ line-height:22px;
+}
+.tweet_actions {
+  font-size:12px;
+  width:100%;
+  padding:5px 0;
+  margin:0 0 10px 0;
+  border-bottom:1px solid #e6e6e6;
+}
+.tweet_profile_pic {
+ float:left; padding:0; margin:0;
+}
+
+.tweet_profile_pic img {
+  width:48px;
+  height:48px;
+  padding-right:7px;
+  border:none;
+  margin:0
+}
+.tweet_name {
+ float:left; padding:0;margin:0;
+}
+.tweet_name a {
+ font-weight:bold;
+}
+.tweet_name div {
+margin:0; padding-top:2px;
+}

@@ -1,0 +1,1 @@
+wget -q --spider http://<yourserver>/<path to this directory>/tweet_consumer.php?access_key=YOUR_PRIVATE_ACCESS_KEY\&feed_url=http://search.twitter.com/search.rss%3Fq=%2523YOUR_HASH_TAG
